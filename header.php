@@ -17,24 +17,20 @@
   </head>
   <body <?php body_class(); ?>>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Nic Bold</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
           <?php
-            $defaults = array(
-              'container' => 'ul',
-              'theme_location' => 'primary-menu',
-              'menu_class' => 'navbar-nav ml-auto'
-            );
-
-            wp_nav_menu( $defaults );
+          $defaults = array(
+            'container' => 'ul',
+            'theme_location' => 'bootstrap-menu',
+            'menu_class' => 'nav-item'
+          );
+          wp_nav_menu( $defaults );
           ?>
-      
-        </div>
+        </ul>
       </div>
     </nav>
