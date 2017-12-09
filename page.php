@@ -13,16 +13,11 @@ get_header(); ?>
 
     <header class="masthead" style="background-image: url('<?php echo $image['url']; ?>')">
       <div class="jumbotron">
-        <h1 class="display-3">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
-                  calling extra attention to featured content or information.</p>
+        <h1 class="display-3 type"></h1>
+          <p class="lead">This is my simple portfolio.</p>
           <hr class="my-2">
-          <p>It uses utility classes for typography and
-                spacing to space content out within the larger container.</p>
           <p class="lead">
-            <a class="btn btn-primary btn-lg scrollTo" data-scrollTo="projects" href="#" role="button">Projects</a>
-            <a class="btn btn-secondary btn-lg scrollTo" data-scrollTo="projects" href="#" role="button">Resume</a>
-            <a class="btn btn-info btn-lg scrollTo" data-scrollTo="projects" href="#" role="button">Contact</a>
+            <a class="btn btn-primary btn-lg scrollTo" data-scrollTo="projects" href="#" role="button">Get Involved!</a>
           </p>
       </div>
     </header>
@@ -33,36 +28,28 @@ get_header(); ?>
 
   <div class="container" style="padding-bottom:3em;">
     <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
+      <div id="card" class="col-md-4">
+          <div class="front card card1">
+          </div>
+          <div class="back">
             <h4 class="card-title">SF Attractions</h4>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">More Info</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Launch demo modal</button>
           </div>
+      </div>
+      <div id="card1" class="col-md-4">
+        <div class="front card card2">
+        </div>
+        <div class="back">
+          <h4 class="card-title" id="hidden">Store Catalog</h4>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Launch demo modal</button>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Store Catalog</h4>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">More Info</button>
-          </div>
+      <div id="card2" class="col-md-4">
+        <div class="front card card3">
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Linux Config</h4>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">More Info</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Cat Clicker</h4>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">More Info</button>
-          </div>
+        <div class="back">
+          <h4 class="card-title" id="hidden">Linux Config</h4>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">Launch demo modal</button>
         </div>
       </div>
     </div>
