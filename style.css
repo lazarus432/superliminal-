@@ -8,6 +8,14 @@ Header
 }
 
 /**********************************
+Body
+/**********************************/
+
+body {
+    background-color: ghostwhite;
+}
+
+/**********************************
 Landing Page
 /**********************************/
 
@@ -15,6 +23,10 @@ Landing Page
     background-size: cover;
     padding: 16em 0;
     color: #FFF;
+}
+
+ul {
+    list-style: none;
 }
 
 .jumbotron {
@@ -27,11 +39,34 @@ h1 {
 }
 
 .card {
-    padding: 5em;
+    height: 25em;
 }
 
-.card-body {
-    text-align: center;
+.row {
+    width: 100%;
+}
+
+.col-md-4 {
+    height: 20em;
+}
+
+.card1 {
+    background-image: url('./img/ggb.jpg');
+    background-position: center;
+}
+
+.card2 {
+    background-image: url('./img/lake.jpg');
+    background-position: center;
+}
+
+.card3 {
+    background-image: url('./img/linux.jpg');
+    background-position: center;
+}
+
+.modal-content {
+    transform: translateY(100%);
 }
 
 /**********************************
@@ -43,4 +78,3 @@ About Page
     background-position: center;
     background-repeat: no-repeat;
 }
-
