@@ -17,24 +17,37 @@
   </head>
   <body id="page-top" <?php body_class(); ?>>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="collapse bg-inverse" id="navbarHeader">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">NB</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-          <?php
-          $defaults = array(
-            'container' => 'ul',
-            'theme_location' => 'bootstrap-menu',
-            'menu_class' => 'nav-item'
-          );
-          wp_nav_menu( $defaults );
-          ?>
-          </ul>
+        <div class="row">
+          <div class="col-sm-8 py-4">
+            <h4 class="text-white">Personal Portfolio</h4>
+            <p class="text-muted">This is my personal portfolio. I am a passionate and driven full stack web developer. I have thoroughly 
+              enjoyed learning more about WordPress as well as developing this portfolio. I listed several of my personal projects below. I have also include the best ways to 
+              contact me.  
+            </p>
+          </div>
+          <div class="col-sm-4 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <?php
+              $defaults = array(
+                'container' => 'ul',
+                'theme_location' => 'bootstrap-menu',
+                'menu_class' => 'text-white'
+              );
+              wp_nav_menu( $defaults );
+              ?>
+            </ul>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+    <div class="navbar navbar-inverse bg-inverse">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand">NB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
