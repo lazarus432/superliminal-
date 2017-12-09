@@ -22,9 +22,8 @@
         <div class="row">
           <div class="col-sm-8 py-4">
             <h4 class="text-white">Personal Portfolio</h4>
-            <p class="text-muted">This is my personal portfolio. I am a passionate and driven full stack web developer. I have thoroughly 
-              enjoyed learning more about WordPress as well as developing this portfolio. I listed several of my personal projects below. I have also include the best ways to 
-              contact me.  
+            <p class="text-muted">This is my personal portfolio. I have thoroughly enjoyed creating this portfolio. This project was developed using WordPress, and Bootstrap 4. 
+            I listed several of my personal projects and contact information below. I am always looking to improve so any and all feedback is appreciated. 
             </p>
           </div>
           <div class="col-sm-4 py-4">
