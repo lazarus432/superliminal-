@@ -1,31 +1,46 @@
-.fixed-top {
-    top: 30px;
-}
+/**********************************
+Header
+/**********************************/
 
-body {
-    padding-top: 5em;
-  }
-
-.navbar{
+.navbar {
+    position: absolute;
     width: 100%;
-    display: inline-block;
-    background-color: gray;
 }
 
-.navbar-toggler-icon {
-    background-image: url('./img/pull-down.png')
+/**********************************
+Landing Page
+/**********************************/
+
+.masthead {
+    background-size: cover;
+    padding: 16em 0;
+    color: #FFF;
 }
 
-.navbar-toggler {
-    float: right;
+.jumbotron {
+    background-color: transparent;
+    text-align: center;
 }
 
-.nav-item {
-    list-style: none;
-    display: inline-flex;
-    margin-top: 7px;
+h1 {
+    text-align: center;
 }
 
-.menu-item {
-    padding-right: 10px;
+.card {
+    padding: 5em;
 }
+
+.card-body {
+    text-align: center;
+}
+
+/**********************************
+About Page
+/**********************************/
+
+.about {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
