@@ -32,37 +32,33 @@
   .type('My name is Nicolas.')
   .pause(750)
   .delete()
-  .type('I am a professional.')
+  .type("I'm a professional.")
   .pause(750)
   .delete(13)
-  .type('programmer.')
-  .pause(750)
-  .delete(11)
-  .type('Full Stack Web Developer!!!')
+  .type('developer.')
 
 })( jQuery );
-
 
 (function($) {
 
   $("#card").flip({
     axis: 'y',
-    trigger: 'hover',
+    trigger: 'click',
   });
 
   $("#card1").flip({
     axis: 'y',
-    trigger: 'hover',
+    trigger: 'click',
   });
 
   $("#card2").flip({
     axis: 'y',
-    trigger: 'hover',
+    trigger: 'click',
   });
 
   $("#card3").flip({
     axis: 'y',
-    trigger: 'hover',
+    trigger: 'click',
   });
 
 })( jQuery );
