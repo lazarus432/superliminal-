@@ -12,6 +12,34 @@ get_header(); ?>
     <?php $image = get_field('banner'); ?>
 
     <header class="masthead" style="background-image: url('<?php echo $image['url']; ?>')">
+    <div class="social-wrapper">
+      <ul class="social-list">
+        <li>
+          <a href="https://github.com/lazarus432">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/nbold3/">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/nb_actual">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
       <div class="jumbotron">
         <h1 class="display-3 type"></h1>
           <p class="lead">This is my simple portfolio.</p>
@@ -22,40 +50,76 @@ get_header(); ?>
       </div>
     </header>
 
-    <h1 id="projects" class="display-3" style="padding: .5em 0 .5em 0;">Projects</h1>
+  <!-- Page Heading -->
+  <h1 class="display-3" style="padding: .5em 0 .5em 0;"><?php the_title(); ?></h1>
 
-    <!-- <?php the_title(); ?> -->
+  <!-- Main Content -->
+  <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <?php the_content() ?>
+        </div>
+      </div>
+    </div>
 
-  <div class="container" style="padding-bottom:3em;">
+  <!-- Projects -->
+  <h1 id="projects" class="display-3" style="padding: .5em 0 .5em 0;">Projects</h1>
+
+  <div class="container">
     <div class="row">
       <div id="card" class="col-md-4">
           <div class="front card card1">
           </div>
           <div class="back">
-            <h4 class="card-title">SF Attractions</h4>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Launch demo modal</button>
+            <h4 class="card-title">Technologies</h4>
+            <ul>
+            <li>1111</li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Overview</button>
           </div>
       </div>
       <div id="card1" class="col-md-4">
         <div class="front card card2">
         </div>
         <div class="back">
-          <h4 class="card-title" id="hidden">Store Catalog</h4>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Launch demo modal</button>
+          <h4 class="card-title" id="hidden">Technologies</h4>
+          <ul>
+            <li>222222</li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Overview</button>
         </div>
       </div>
       <div id="card2" class="col-md-4">
         <div class="front card card3">
         </div>
         <div class="back">
-          <h4 class="card-title" id="hidden">Linux Config</h4>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">Launch demo modal</button>
+          <h4 class="card-title" id="hidden">Technologies</h4>
+          <ul>
+            <li>222222</li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">Overview</button>
         </div>
       </div>
     </div>
   </div>
 
-    <!-- Project Modals -->
+  <!-- Project Modals -->
 
     <div class="modal" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -138,24 +202,9 @@ get_header(); ?>
       </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-          </div>
-        </div>
-      </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <?php the_content() ?>
-        </div>
-      </div>
-    </div>
-
 <?php endwhile; else: ?>
     <p>Sorry, page not found.</p>
 <?php endif; ?>
 
+<!-- Page Footer -->
 <?php get_footer(); ?>
