@@ -12,6 +12,7 @@ get_header(); ?>
     <?php $image = get_field('banner'); ?>
 
     <header class="masthead" style="background-image: url('<?php echo $image['url']; ?>')">
+    <div class="slantedDivC"></div>
     <div class="social-wrapper">
       <ul class="social-list">
         <li>
@@ -42,7 +43,7 @@ get_header(); ?>
     </div>
       <div class="jumbotron">
         <h1 class="display-3 type"></h1>
-          <p class="lead">This is my simple portfolio.</p>
+          <p class="lead" style="position:relative";>This is my simple portfolio.</p>
           <hr class="my-2">
           <p class="lead">
             <a class="btn btn-primary btn-lg scrollTo" data-scrollTo="projects" href="#" role="button">Get Involved!</a>
@@ -50,18 +51,17 @@ get_header(); ?>
       </div>
     </header>
 
+  <div class="slantedDivA">
+    <div class="slantedDivB"></div>
+  </div>
+  
   <!-- Page Heading -->
-  <h1 class="display-3" style="padding: .5em 0 .5em 0;"><?php the_title(); ?></h1>
+  <h1 class="display-3" style="padding: .5em 0 .5em 0; position: relative;">
+      <?php the_title(); ?>
+    </h1>
 
   <!-- Main Content -->
-  <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-        </div>
-      </div>
-    </div>
-    <div class="container">
+    <div class="container slantedDivD">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
             <?php the_content() ?>
@@ -70,7 +70,8 @@ get_header(); ?>
     </div>
 
   <!-- Projects -->
-  <h1 id="projects" class="display-3" style="padding: .5em 0 .5em 0;">Projects</h1>
+
+    <h1 id="projects" class="display-3" style="padding: .5em 0 .5em 0;">Projects</h1>
 
   <div class="container">
     <div class="row">
@@ -80,9 +81,9 @@ get_header(); ?>
           <div class="back">
             <h4 class="card-title">Technologies</h4>
             <ul>
-            <li>1111</li>
-            <li></li>
-            <li></li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
             <li></li>
           </ul>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Overview</button>
@@ -94,9 +95,9 @@ get_header(); ?>
         <div class="back">
           <h4 class="card-title" id="hidden">Technologies</h4>
           <ul>
-            <li>222222</li>
-            <li></li>
-            <li></li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>OAuth2</li>
             <li></li>
           </ul>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Overview</button>
@@ -108,10 +109,10 @@ get_header(); ?>
         <div class="back">
           <h4 class="card-title" id="hidden">Technologies</h4>
           <ul>
-            <li>222222</li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Linux Ubuntu</li>
+            <li>Apache</li>
+            <li>PostgreSQL</li>
+            <li>SSH</li>
           </ul>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">Overview</button>
         </div>
