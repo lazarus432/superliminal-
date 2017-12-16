@@ -16,6 +16,20 @@ body {
 }
 
 /**********************************
+Social Media Links
+/**********************************/
+
+.social-wrapper {
+    position: absolute;
+}
+
+.social-list {
+    background-color: transparent;
+    padding: 2em;
+}
+
+
+/**********************************
 Landing Page
 /**********************************/
 
@@ -102,15 +116,56 @@ About Page
     background-repeat: no-repeat;
 }
 
+
+
 /**********************************
-Social Media Links
+Developement
 /**********************************/
 
-.social-wrapper {
+.slantedDivA {
     position: absolute;
+    width: 100%;
+    height: 160px;
+    background: inherit;
+    transform: skewY(-9deg);
+}
+.slantedDivB {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background: inherit;
+    transform: skewY(15deg);
+}
+.slantedDivC {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background: inherit;
+    transform: skewY(-14deg);
 }
 
-.social-list {
-    background-color: transparent;
-    padding: 2em;
+.slantedDivD {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background: rgba(40, 40, 40, 1);
+    box-sizing: border-box;
+    padding: 30px;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.slantedDivD:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(5deg);
 }
